@@ -7,49 +7,30 @@
 </head>
 
 <body>
-    <form>
-	 <p>	
-		<label for="name">Name*</label>
-        <textarea name="name" placeholder="Name"></textarea>		 
-		 
+    <form action="" method="post">
 		
-	 </p>	
-	 <p>	     
+		<label for="name">Name*</label>
+       <input type="text" id="nmae" placeholder="Name" required></br></br>
 		<label for="email">Email*</label>
-		  <textarea name="email" placeholder="Email"></textarea>
-	 </p> 
-	 <p>
-		   <lable>Gender*</lable>
-		   <label>Male<input type="radio" name="gender" value="male"/></label>
-		   <label>Female<input type="radio" name="gender" value="female"/></label>
-	</p>
-	<p>
-		   <lable>Car Brands*</label>  
-		   <lable>BMW<input type="checkbox" /></lable>
-		   <lable>Audi<input type="checkbox" /></lable>
-		   <lable>Mercedez<input type="checkbox" /></lable>
-	</p>
-    <p>
-		<lable for="age">Age*</lable>
-		 <textarea name="age" placeholder="Age"></textarea>
-	</p>
-    <p>
-		<label>DOB*<input type="number" /></label>
-    </p>
-	<p>
-		<label>Phone Number<input type="tel" /></label>
-	</p>
-	<p>
+		<input type="email" id="email" placeholder="Email" required></br></br>
+		   <lable >Gender*</lable>
+		   <label for="gender_m">Male<input type="radio" name="gender" value="male" id="gender_m" required></label>
+		   <label for="gender_f">Female<input type="radio" name="gender" value="female" id="gender_p" required></label></br></br>
+		    <lable>Car Brands*</label>  
+		   <lable for="cars">BMW<input type="checkbox" id="cars" placeholder="--Please choose an option--" required></lable>
+		   <lable for="cars">Audi<input type="checkbox" id="cars" placeholder="--Please choose an option--" required></lable>
+		   <lable for="cars">Mercedez<input type="checkbox" id="cars" placeholder="--Please choose an option--" required></lable><br><br>
+				
+		   <lable for="age">Age*</lable>
+		<input type="number" id="age" placeholder="age" required><br><br>
+		<label for="dob">DOB*<input type="number" id="age" required></label><br><br>
+		<label for="tel">Phone Number<input type="tel" id="tel" placeholder="xxx-xxx-xxxx" ></label><br><br>
 		<label for="password">password*</label>
-		 <textarea name="password" placeholder="Password"></textarea>
-	</p>
-    <p>
-		<label>Checkbox*</label>
-		<label>I agree to the TOS<input type="checkbox" /></label>
-	</p>	
-    <p>
-		<input type="submit" />
-	</p>
+		 <input type="password" id="password" placeholder="Password" required></br></br>
+		<label for="tos">Checkbox*</label>
+		<input type="checkbox" id="tos" required>I agree to the TOS</label><br><br>
+		<button type="submit">submit</button>
+	
 		
 		
 </body>
