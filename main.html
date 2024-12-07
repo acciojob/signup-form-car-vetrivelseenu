@@ -15,11 +15,15 @@
 		<input type="email" id="email" placeholder="Email" required></br></br>
 		   <lable >Gender*</lable>
 		   <label for="gender_m">Male<input type="radio" name="gender" value="male" id="gender_m" required></label>
-		   <label for="gender_f">Female<input type="radio" name="gender" value="female" id="gender_p" required></label></br></br>
-		    <lable>Car Brands*</label>  
-		   <lable for="cars">BMW<input type="checkbox" id="cars" placeholder="--Please choose an option--" required></lable>
-		   <lable for="cars">Audi<input type="checkbox" id="cars" placeholder="--Please choose an option--" required></lable>
-		   <lable for="cars">Mercedez<input type="checkbox" id="cars" placeholder="--Please choose an option--" required></lable><br><br>
+		   <label for="gender_f">Female<input type="radio" name="gender" value="female" id="gender_p" required></lable><br><br>
+		   <lable for="cars">Car Brand*</label>
+		   <select name="cars" id="cars">
+			<option value="--Please choose">--Please choose an option--</option>
+			<option value="Audi">Audi</option>
+			<option value="BMW">BMW</option> 
+			<option value="volvo">Volvo</option>   
+		   </select>
+		     <br><br>
 				
 		   <lable for="age">Age*</lable>
 		<input type="number" id="age" placeholder="age" required><br><br>
